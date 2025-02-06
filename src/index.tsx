@@ -1,8 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+/* eslint-disable check-file/filename-naming-convention */
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 import { worker } from "./Mocks/browser";
+import "./i18n";
+
 worker.start().then(() => {
   ReactDOM.createRoot(document.getElementById("root")!).render(
     <React.StrictMode>

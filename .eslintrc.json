@@ -1,0 +1,54 @@
+{
+  "extends": ["airbnb","plugin:@typescript-eslint/recommended","plugin:react/recommended", "plugin:react-hooks/recommended"],
+  "plugins": ["import","@typescript-eslint","react", "node", "check-file"],
+  "rules": {
+    "jsx-a11y/anchor-is-valid": 0,
+    // Add any additional ESLint rules here.
+    "node/global-require": "off",
+    "global-require": "off",
+    "react-hooks/exhaustive-deps": "off",
+    //"@typescript-eslint/no-explicit-any": "off",
+    "react/jsx-filename-extension": "off",
+    "no-console": "off",
+    "react/require-default-props": "off",
+    "eol-last": ["off"],
+    "linebreak-style": "off",
+    "quotes": ["error", "double"],
+    //"space-after-keywords": ["error", "never"],
+    "import/no-unresolved": "off",
+    "import/extensions": ["error", "ignorePackages",
+      {
+        "js": "never", // Don't require file extensions for JavaScript files
+        "jsx": "never", // Don't require file extensions for JSX files
+        "ts": "never", // Don't require file extensions for TypeScript files
+        "tsx": "never" // Don't require file extensions for TypeScript JSX files
+      }
+    ],
+    "comma-dangle": "off",
+    "check-file/filename-naming-convention": [
+      "error",
+      {
+        "**/*.{jsx,tsx}": "PASCAL_CASE",
+        "**/*.{js,ts}": "SNAKE_CASE"
+      }
+    ],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "variable",
+        "format": ["camelCase"]
+      }
+    ]
+  },
+  "parser": "@typescript-eslint/parser",
+  "settings": {
+      "import/resolver": {
+        "node": {
+          "extensions": [".js", ".jsx", ".ts", ".tsx"] // Add .ts and .tsx to the list of extensions
+        }
+      }
+    },
+    "globals": {
+      "window": true
+    }
+}

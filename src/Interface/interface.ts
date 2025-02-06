@@ -6,3 +6,15 @@ export interface Employee {
     landline: string;
     mobile: string;
 }
+
+export interface EditModalProps {
+    open: boolean;
+    onClose: () => void;
+    employee: Employee | null;
+    onSave: (employee: Employee) => void;
+  }
+
+export interface SearchBarProps {
+    value: string;
+    onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  }
