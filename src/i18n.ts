@@ -11,7 +11,8 @@ i18n.use(initReactI18next).init({
         localnr: "Localnr",
         landline: "Landline No.",
         mobile: "Mobile No.",
-        actions: "Actions"
+        actions: "Actions",
+        Search: "Search"
       },
     },
     dk: {
@@ -22,7 +23,8 @@ i18n.use(initReactI18next).init({
         localnr: "Lokalnr",
         landline: "Fastnet nr.",
         mobile: "Mobil nr.",
-        actions: "Handlinger"
+        actions: "Handlinger",
+        Search: "Søge"
       },
     },
   },
