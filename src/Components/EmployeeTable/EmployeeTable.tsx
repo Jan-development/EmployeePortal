@@ -182,7 +182,7 @@ function EmployeeTable() {
                   <TableCell>{emp.mobile}</TableCell>
                   <TableCell>
                     <IconButton onClick={() => handleEdit(emp)}><Edit /></IconButton>
-                    <IconButton onClick={() => handleDelete(emp.id)}><Delete /></IconButton>
+                    <IconButton data-testid={`delete-${emp.id}`} onClick={() => handleDelete(emp.id)}><Delete /></IconButton>
                   </TableCell>
                 </TableRow>
               ))}
