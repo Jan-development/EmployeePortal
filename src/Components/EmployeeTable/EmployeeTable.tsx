@@ -51,7 +51,9 @@ function EmployeeTable() {
       ? String(a[column]).localeCompare(String(b[column]))
       : String(b[column]).localeCompare(String(a[column]))));
     setEmployees(sortedData);
+    localStorage.setItem("employees", JSON.stringify(sortedData));
   };
+
   const handleToggleTheme = () => {
     setDarkMode(!darkMode);
   };
@@ -154,7 +156,7 @@ function EmployeeTable() {
           <Table>
             <TableHead>
               <TableRow>
-                {["Name", "Department", "Localnr", "Landline", "Mobile"].map((col) => (
+                {["name", "department", "localnr", "landline", "mobile"].map((col) => (
                   <TableCell key={col}>
                     <TableSortLabel
                       active={sortColumn === col}
@@ -167,7 +169,7 @@ function EmployeeTable() {
                     </TableSortLabel>
                   </TableCell>
                 ))}
-                <TableCell>{t("Actions")}</TableCell>
+                <TableCell>{t("actions")}</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>

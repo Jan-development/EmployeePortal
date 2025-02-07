@@ -6,23 +6,23 @@ i18n.use(initReactI18next).init({
     en: {
       translation: {
         toggle_theme: "Toggle Dark Mode",
-        Name: "Name",
-        Department: "Department",
-        Localnr: "Localnr",
-        Landline: "Landline No.",
-        Mobile: "Mobile No.",
-        Actions: "Actions"
+        name: "Name",
+        department: "Department",
+        localnr: "Localnr",
+        landline: "Landline No.",
+        mobile: "Mobile No.",
+        actions: "Actions"
       },
     },
     dk: {
       translation: {
         toggle_theme: "Skift mørk tilstand",
-        Name: "Navn",
-        Department: "Afdeling",
-        Localnr: "Lokalnr",
-        Landline: "Fastnet nr.",
-        Mobile: "Mobil nr.",
-        Actions: "Handlinger"
+        name: "Navn",
+        department: "Afdeling",
+        localnr: "Lokalnr",
+        landline: "Fastnet nr.",
+        mobile: "Mobil nr.",
+        actions: "Handlinger"
       },
     },
   },
